@@ -1,0 +1,22 @@
+Order allow,deny
+allow from all
+
+#20141012 ishizaka記述リダイレクト wwwなし
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.1919kemao9.com [NC]
+RewriteRule ^(.*)$ http://1919kemao9.com//$1 [L,R=301]
+
+#20141012 ishizaka記述errorページ設定
+ErrorDocument 400 /400.html
+ErrorDocument 401 /401.html
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+ErrorDocument 502 /502.html
+ErrorDocument 504 /504.html
+
+#20141012 検索エンジンが来ないようにする。
+SetEnvIf User-Agent "Googlebot" shutout
+SetEnvIf User-Agent "Slurp" shutout
+SetEnvIf User-Agent "msnbot" shutout

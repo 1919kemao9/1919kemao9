@@ -1,0 +1,55 @@
+/*トップページの設定*/
+
+/*background image setting*/
+.bg_image {
+    background: url(../images/bg_image.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*item new image setting*/
+.item_new img {
+	width: 360px;
+	height: 231px;
+}
+
+/*item new image caption*/
+figure {
+	position: relative;
+	overflow: hidden;
+	width: 400px;
+}
+figcaption {
+	position: absolute;
+	bottom: 30px;
+	right: 40px;
+	z-index: 2;
+	width: 100%;
+	height: 60px;
+	background: rgba(0,0,0,.6);
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-0-transition: .3s;
+	transition: .3s;
+}
+figure:hover figcaption {
+	right: 100%;
+}
+
+figcaption h3 {
+	color: #fff;
+	font-family-serif:　Georgia, "Times New Roman", Times, serif;
+	padding: 0 0 0 40px;
+	text-align: center;
+}
+
+/*google maps*/
+.g_maps {
+	width: 555px;
+	height: 357px;
+}
+
+
+
