@@ -9,6 +9,23 @@
     background-size: cover;
 }
 
+/*navbar setting*/
+.navbar-brand {
+	height: 60px;
+	margin-bottom: 18px;
+}
+
+/*navbar-nav setting*/
+.navbar-nav {
+	margin: 16px 0 0 0;
+	font-size: 150%;
+}
+
+/*navbar-toggle setting*/
+.navbar-toggle {
+	margin: 22px 15px 8px 0;
+}
+
 /*item new image setting*/
 .item_new img {
 	width: 360px;
