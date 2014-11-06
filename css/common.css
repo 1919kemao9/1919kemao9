@@ -68,5 +68,45 @@ figcaption h3 {
 	height: 357px;
 }
 
+/*ーーーーItem page settingーーーー*/
+/*close button setting*/
+#glisse-close {
+    background-color: #ccc;
+    border: solid 1px #999;
+    border-radius: 4px;
+    position: fixed;
+  	top:90px;
+  	right: 120px;
+  	height: 40px;
+  	width: 40px;
+  	background: url(/images/close.png) no-repeat center;
+}
 
+
+/*item gralley image-resize*/
+#glisse-overlay {
+  background: rgba(0,0,0.3);}
+
+.image-resize {
+	max-width: 100%;
+	max-height: 262px;
+}
+
+* html body .image-resize {
+	width: expression(this.width >= this.height ? "100%" : "auto");
+	height: expression(this.width <= this.height ? "262px" : "auto");
+}
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+	.image-resize {
+		max-width: 700px;
+		max-height: 450px;
+	}
+
+	* html body .image-resize {
+		width: expression(this.width >= this.height ? "700px" : "auto");
+		height: expression(this.width <= this.height ? "700px" : "auto");
+	}
+}
 
