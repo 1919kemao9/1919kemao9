@@ -125,6 +125,10 @@ figcaption h3 {
 	padding: 10px 0 0 0;
 }
 
+.image-col {
+	margin: 0 0 10px 0;
+}
+
 /*smartphone setting*/
 @media screen and (min-width:441px) and ( max-width:600px) {
 	.g_maps{
