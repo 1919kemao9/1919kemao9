@@ -7,6 +7,12 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^www.1919kemao9.com [NC]
 RewriteRule ^(.*)$ http://1919kemao9.com//$1 [L,R=301]
 
+#20141012 ishizaka記述リダイレクト wwwなし
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^http://1919kemao9.sakura.ne.jp/ [NC]
+RewriteRule ^(.*)$ http://1919kemao9.com//$1 [L,R=301]
+
 #20141012 ishizaka記述errorページ設定
 ErrorDocument 400 /400.html
 ErrorDocument 401 /401.html
