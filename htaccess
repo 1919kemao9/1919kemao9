@@ -2,15 +2,12 @@ Order allow,deny
 allow from all
 
 #20141012 ishizaka記述リダイレクト wwwなし
-RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^www.1919kemao9.com [NC]
-RewriteRule ^(.*)$ http://1919kemao9.com//$1 [L,R=301]
+Redirect / "http://1919kemao9.com/" 
 
 #20141012 ishizaka記述リダイレクト wwwなし
 RewriteEngine On
 RewriteBase /
-RewriteCond %{HTTP_HOST} ^http://1919kemao9.sakura.ne.jp/ [NC]
+RewriteCond %{HTTP_HOST} ^www.1919kemao9.com [NC]
 RewriteRule ^(.*)$ http://1919kemao9.com//$1 [L,R=301]
 
 #20141012 ishizaka記述errorページ設定
