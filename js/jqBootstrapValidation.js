@@ -183,8 +183,8 @@
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "Not a valid email address<!-- data-validator-validemail-message to override -->";
-              if ($this.data("validationValidemailMessage")) {
+              message = "メールアドレスが入力されていません。<!-- data-validator-validemail-message to override -->";
+              if ($this.data("メールアドレスが入力されていません。")) {
                 message = $this.data("validationValidemailMessage");
               } else if ($this.data("validationEmailMessage")) {
                 message = $this.data("validationEmailMessage");
