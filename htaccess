@@ -1,13 +1,14 @@
+
 Order allow,deny
 allow from all
 
-#20141012 ishizakaè¨˜è¿°ãƒªãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆ wwwãªã—
+#20141012 ishizaka‹LqƒŠƒ_ƒCƒŒƒNƒg www‚È‚µ
 RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_HOST} ^www.1919kemao9.com [NC]
 RewriteRule ^(.*)$ http://1919kemao9.com//$1 [L,R=301]
 
-#20141012 ishizakaè¨˜è¿°errorãƒšãƒ¼ã‚¸è¨­å®š
+#20141012 ishizaka‹Lqerrorƒy[ƒWİ’è
 ErrorDocument 400 /400.html
 ErrorDocument 401 /401.html
 ErrorDocument 403 /403.html
@@ -16,7 +17,14 @@ ErrorDocument 500 /500.html
 ErrorDocument 502 /502.html
 ErrorDocument 504 /504.html
 
-#20141012 æ¤œç´¢ã‚¨ãƒ³ã‚¸ãƒ³ãŒæ¥ãªã„ã‚ˆã†ã«ã™ã‚‹ã€‚
+#20141012 ŒŸõƒGƒ“ƒWƒ“‚ª—ˆ‚È‚¢‚æ‚¤‚É‚·‚éB
 SetEnvIf User-Agent "Googlebot" shutout
 SetEnvIf User-Agent "Slurp" shutout
 SetEnvIf User-Agent "msnbot" shutout
+
+#PHP‚ğhtml‚ÅÀs
+Action myphp-script /php.cgi
+AddHandler myphp-script .php .html
+
+
+
