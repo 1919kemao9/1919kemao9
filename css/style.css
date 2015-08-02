@@ -1,0 +1,33 @@
+
+.centerling {  
+	position:relative;
+	width:100%;
+	max-width:600px;
+	height:300px;
+	margin:0 auto;
+	text-align:center;
+	background:#fff;
+}  
+.centerling div   {  
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 0.8em;
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:100%;
+	margin:-1.5em 0 0 -50%;
+	border: 0;
+	color: #111;
+	text-align: center;
+	line-height: 1.8em;
+}  
+
+.centerling div img {
+	margin-bottom: 30px;
+}
+
+.centerling div hr {
+	border: 0;
+	border-bottom: 1px dashed #ccc;
+	background: #999;
+}
