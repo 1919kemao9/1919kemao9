@@ -19,7 +19,7 @@
 		<?php // Display Latest Posts Title
 		if ( isset( $theme_options['latest_posts_title'] ) and $theme_options['latest_posts_title'] <> '' ) : ?>
 					
-			<img src="http://1919kemao9.com/content/wp-content/uploads/150617top_banner.jpg" class="topbanner">
+			<img src="http://local_kemao.com/content/wp-content/uploads/150802top_banner.jpg" class="topbanner">
 	
 		<?php endif; ?>
 			
